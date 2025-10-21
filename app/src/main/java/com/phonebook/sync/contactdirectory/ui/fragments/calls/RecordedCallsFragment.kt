@@ -21,6 +21,12 @@ class RecordedCallsFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.tvEmpty.visibility = View.VISIBLE
+        binding.recyclerViewCalls.visibility = View.GONE
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
