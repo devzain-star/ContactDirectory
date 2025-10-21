@@ -15,11 +15,11 @@
         android:layout_height="wrap_content"
         android:paddingHorizontal="16dp"
         android:paddingVertical="12dp"
+        android:layout_marginTop="5dp"
         android:text="@string/call_history"
-        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textSize="22sp"
         android:fontFamily="@font/bold"
         />
-
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
