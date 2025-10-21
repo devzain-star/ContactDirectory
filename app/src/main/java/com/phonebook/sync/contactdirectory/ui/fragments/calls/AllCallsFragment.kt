@@ -72,7 +72,6 @@ class AllCallsFragment : Fragment() {
 
             override fun onAddNoteClick(entry: CallEntry) {
                 // TODO: Open note input bottom sheet and make API call
-                Toast.makeText(requireContext(), "TODO: Add note for ${entry.name}", Toast.LENGTH_SHORT).show()
             }
 
             override fun onItemClick(entry: CallEntry) {
@@ -100,7 +99,6 @@ class AllCallsFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        // Reload data when returning to this fragment
         loadCallLogs()
     }
 

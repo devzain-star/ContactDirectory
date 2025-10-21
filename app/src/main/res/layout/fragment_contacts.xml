@@ -3,36 +3,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-
     android:background="?attr/colorSurface"
+    android:orientation="vertical"
     tools:context=".ui.fragments.ContactsFragment">
 
     <TextView
         android:id="@+id/topAppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/bold"
         android:paddingHorizontal="16dp"
         android:paddingVertical="12dp"
-        android:layout_marginTop="10dp"
         android:text="@string/contacts"
-        android:textSize="22sp"
-        android:fontFamily="@font/bold"
-        />
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="22sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewContacts"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="8dp"
         android:clipToPadding="false"
+        android:padding="8dp"
         tools:listitem="@layout/item_contact" />
 
     <ProgressBar
         android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="?android:attr/progressBarStyleSmall"
         android:layout_gravity="center"
         android:visibility="gone" />
 

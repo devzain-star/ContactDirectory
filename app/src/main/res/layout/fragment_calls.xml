@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="?attr/colorSurface"
+    android:orientation="vertical"
     android:paddingVertical="8dp"
     tools:context=".ui.fragments.CallsFragment">
 
@@ -13,27 +13,26 @@
         android:id="@+id/topAppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/bold"
         android:paddingHorizontal="16dp"
         android:paddingVertical="12dp"
-        android:layout_marginTop="5dp"
         android:text="@string/call_history"
-        android:textSize="22sp"
-        android:fontFamily="@font/bold"
-        />
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="22sp" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorSurface"
-        app:tabMode="scrollable"
+        app:elevation="2dp"
         app:tabIndicatorColor="?attr/colorPrimary"
         app:tabIndicatorHeight="3dp"
+        app:tabMode="scrollable"
         app:tabSelectedTextColor="?attr/colorPrimary"
-        app:tabTextColor="?attr/colorOnSurfaceVariant"
         app:tabTextAppearance="@style/TextAppearance.Material3.LabelLarge"
-        app:elevation="2dp"
-        />
+        app:tabTextColor="?attr/colorOnSurfaceVariant" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"

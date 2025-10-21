@@ -72,7 +72,6 @@ class IncomingCallsFragment : Fragment() {
 
             override fun onAddNoteClick(entry: CallEntry) {
                 // TODO: Open note input bottom sheet and make API call
-                Toast.makeText(requireContext(), "TODO: Add note for ${entry.name}", Toast.LENGTH_SHORT).show()
             }
 
             override fun onItemClick(entry: CallEntry) {
