@@ -19,8 +19,11 @@
         <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Material3.Corner.Medium</item>
     </style>
 
-    <style name="BottomSheetDialogTheme" parent="ThemeOverlay.Material3.BottomSheetDialog">
-        <item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Material3.Corner.Large</item>
+    <style name="BottomSheetDialogTheme" parent="Theme.Material3.Light.BottomSheetDialog">
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Material3.Corner.Medium</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Material3.Corner.Large</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Material3.Corner.ExtraLarge</item>
+        <item name="android:backgroundDimAmount">0.4</item>
     </style>
 
 </resources>

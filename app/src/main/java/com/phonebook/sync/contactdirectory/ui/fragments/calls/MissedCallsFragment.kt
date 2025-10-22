@@ -184,7 +184,6 @@ class MissedCallsFragment : Fragment() {
     }
 
     private suspend fun uploadNoteToServer(entry: CallEntry, option: ResponseOption, note: String) {
-
         Toast.makeText(requireContext(), "Server error", Toast.LENGTH_SHORT).show()
     }
 
