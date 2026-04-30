@@ -30,7 +30,3 @@ A modern Android application that tracks call logs, manages contacts, and provid
 - **Permissions Management**: View and manage app permissions
 - **Configuration Options**: Customize app behavior and preferences
 - **Notifications**: Receive alerts for incoming calls
-
-## Architecture
-
-This app follows a **clean architecture** pattern with clearly separated layers:
